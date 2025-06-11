@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  .card {
+    width: 90%;
+    max-width: 500px;
+    background: linear-gradient(135deg, #f9f9ff 0%, #e6f3ff 100%);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  .card::before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 200px;
+    height: 200px;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path fill="%23a2d7ff" opacity="0.3" d="M30,10 Q50,5 70,20 T90,50 Q95,70 80,90 T50,95 Q30,90 20,70 T10,50 Q5,30 20,20 T30,10"/></svg>');
+    background-size: contain;
+    opacity: 0.5;
+  }
+  
+  .card::after {
+    content: "";
+    position: absolute;
+    bottom: -50px;
+    left: -50px;
+    width: 200px;
+    height: 200px;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path fill="%23ffb6c1" opacity="0.3" d="M30,10 Q50,5 70,20 T90,50 Q95,70 80,90 T50,95 Q30,90 20,70 T10,50 Q5,30 20,20 T30,10"/></svg>');
+    background-size: contain;
+    opacity: 0.5;
+  }
+  
+  h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  h2 {
+    color: #3498db;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 25px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  p {
+    color: #34495e;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+  }
+  
+  .highlight {
+    color: #e74c3c;
+    font-weight: bold;
+  }
+  
+  .contact {
+    margin-top: 30px;
+    font-style: italic;
+    color: #7f8c8d;
+  }
+</style>
+
+<div class="card">
+  <h1>KADI YA MCHANGO</h1>
+  <h2>Mh/Pr/Bw&Bi/Mwal/Ask/Mch/Dkt</h2>
+  
+  <p><strong>Dr Erick</strong></p>
+  
+  <p>KWAYA YA MOYO WA SIFA FPCT MALILO</p>
+  
+  <p>Inapenda kukupa kadi hii ya kuomba mchango wa kiasi cha shilingi <span class="highlight">50,000/-</span> kwaajili ya kufanikisha ibaada ya kusifu na kuabudu inayoenda kwa jina la.</p>
+  
+  <p class="highlight">USIKU WA BADILIKO -SEASON 2.</p>
+  
+  <p>Itayofanyika F.P.C.T MALILO SHIA. mwanzo wa mwezi wa tisa Ibaada hii itagarimu kiasi cha shilling million mbili <span class="highlight">(2,000,000/-)</span> tunaomba urudishe kadi hii kabla ya tarehe <span class="highlight">27/8/2025</span> kwa alie kupa kadi hii Mungu akubariki kwa kushiriki.</p>
+  
+  <div class="contact">
+    <p>Kwa mawasiliano:<br>
+      Mwenyekiti +255613987896;<br>
+      Mhazini +255674058824.</p>
+  </div>
+</div>
+
+</html>
